@@ -11,7 +11,7 @@
  //assign port number
  let port = 3600 | process.env.port;
 
- app.use("/img", express.static(__dirname + 'Public/Images'));
+ app.use("/img", express.static(__dirname + "/Public/Image"));
 
  //My routes
  app.get('/resume', (req, res) => {

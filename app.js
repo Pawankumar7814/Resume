@@ -8,6 +8,7 @@
 
  //view engine
  app.set('view engine', 'ejs');
+
  //assign port number
  let port = 3600 | process.env.port;
 

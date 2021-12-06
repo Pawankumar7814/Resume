@@ -13,10 +13,8 @@
 
  app.use("/img", express.static(__dirname + "/Public/Image"));
 
- //My routes
- app.get('/resume', (req, res) => {
-     res.render('../views/index.ejs');
- })
+ //routers
+ app.use("/", require("./routes/mainroutes.js"));
 
  //Start http server
  http.createServer(app).listen(port, () => {
